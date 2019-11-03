@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeezyTest.Api", "BeezyTest.Api\BeezyTest.Api.csproj", "{5B3C6E3A-4B3F-47C6-B3F7-F67AB7CFEAAA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeezyCinemaDb", "BeezyCinemaDb\BeezyCinemaDb.csproj", "{558C3DFB-52C1-4C8A-9A36-5C997CD8DE15}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainEntities", "DomainEntities\DomainEntities.csproj", "{DC739E6D-DBD3-454D-ADBC-3D662085E7FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServices", "DomainServices\DomainServices.csproj", "{5D65D4B0-2A83-4A8A-A48F-74F41E4AB199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainServices", "DomainServices\DomainServices.csproj", "{5D65D4B0-2A83-4A8A-A48F-74F41E4AB199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServices.Test", "DomainServices.Test\DomainServices.Test.csproj", "{17FE82C3-935D-4172-A8C6-B24967F088B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainServices.Test", "DomainServices.Test\DomainServices.Test.csproj", "{17FE82C3-935D-4172-A8C6-B24967F088B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeezyCinemaDb.Test", "BeezyCinemaDb.Test\BeezyCinemaDb.Test.csproj", "{CC883303-383C-4D1C-88DD-9154C2D3C596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,10 @@ Global
 		{5B3C6E3A-4B3F-47C6-B3F7-F67AB7CFEAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B3C6E3A-4B3F-47C6-B3F7-F67AB7CFEAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B3C6E3A-4B3F-47C6-B3F7-F67AB7CFEAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558C3DFB-52C1-4C8A-9A36-5C997CD8DE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558C3DFB-52C1-4C8A-9A36-5C997CD8DE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558C3DFB-52C1-4C8A-9A36-5C997CD8DE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558C3DFB-52C1-4C8A-9A36-5C997CD8DE15}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC739E6D-DBD3-454D-ADBC-3D662085E7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC739E6D-DBD3-454D-ADBC-3D662085E7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC739E6D-DBD3-454D-ADBC-3D662085E7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +41,10 @@ Global
 		{17FE82C3-935D-4172-A8C6-B24967F088B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17FE82C3-935D-4172-A8C6-B24967F088B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17FE82C3-935D-4172-A8C6-B24967F088B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC883303-383C-4D1C-88DD-9154C2D3C596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC883303-383C-4D1C-88DD-9154C2D3C596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC883303-383C-4D1C-88DD-9154C2D3C596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC883303-383C-4D1C-88DD-9154C2D3C596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
