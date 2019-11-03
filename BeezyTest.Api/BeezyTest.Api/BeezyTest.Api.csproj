@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BeezyCinemaDb\BeezyCinemaDb.csproj" />
+    <ProjectReference Include="..\DomainEntities\DomainEntities.csproj" />
+    <ProjectReference Include="..\DomainServices\DomainServices.csproj" />
+    <ProjectReference Include="..\TmdbServices\TmdbServices.csproj" />
   </ItemGroup>
 
 </Project>
