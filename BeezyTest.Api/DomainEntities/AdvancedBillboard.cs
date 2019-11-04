@@ -6,6 +6,7 @@ namespace BeezyTest.DomainEntities
 	{
 		public struct WeekSchedule
 		{
+			public int Week { get; set; }
 			public Movie[] BigScreens { get; set; }
 			public Movie[] SmallScreens { get; set; }
 		}

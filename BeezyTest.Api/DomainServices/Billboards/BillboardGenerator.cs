@@ -32,6 +32,7 @@ namespace BeezyTest.DomainServices.Billboards
 			{
 				for(int w = 0; w < weekCount; w++)
 				{
+					result.Schedule[w].Week = w+1;
 					result.Schedule[w].BigScreens = CreateWeekSchedule(bigMovies, bigScreenCount);
 					result.Schedule[w].SmallScreens = CreateWeekSchedule(smallMovies, smallScreenCount);
 				}
