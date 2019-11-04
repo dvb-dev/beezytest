@@ -13,5 +13,10 @@ namespace BeezyTest.Api.Controllers.Viewer
 		{
 			throw new NotImplementedException();
 		}
+		[HttpGet("Upcoming")]
+		public IActionResult Upcoming([FromQuery] UpcomingDto requestParameters)
+		{
+			throw new NotImplementedException();
+		}
     }
 }
