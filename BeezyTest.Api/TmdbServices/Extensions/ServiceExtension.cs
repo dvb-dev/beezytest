@@ -22,9 +22,9 @@ namespace BeezyTest.TmdbServices.Extensions
 					return builderInstance.Config;
 				})
 				.AddSingleton(typeof(ITmdbClient), typeof(TmdbClient))
+				.AddSingleton(typeof(SimpleCache<>))
 				.AddScoped(typeof(IMovieSearchService), typeof(TmdbMovieSearchService))
 				.AddAllOfType(typeof(IIdNamePair), new[] { typeof(ServiceExtension).Assembly })
-				.AddTransient(typeof(SimpleCache<>))
 				.AddTransient<GenreProvider>()
 				.AddTransient<KeywordProvider>()
 				.AddTransient<MovieProvider>();
