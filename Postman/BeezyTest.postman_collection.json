@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "ed88f787-926e-43fb-8507-4db94331d1f7",
+		"name": "BeezyTest",
+		"description": "API tests for the Beezy Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Billboard-B1-example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44345/cinema/billboard/buildadvanced?weekCount=2&bigScreenCount=2&smallScreenCount=1&useBoxOfficeData=false&keywords=space&keywords=alien&genres=action&cityId=5&upcomingOnly=false",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44345",
+					"path": [
+						"cinema",
+						"billboard",
+						"buildadvanced"
+					],
+					"query": [
+						{
+							"key": "weekCount",
+							"value": "2"
+						},
+						{
+							"key": "bigScreenCount",
+							"value": "2"
+						},
+						{
+							"key": "smallScreenCount",
+							"value": "1"
+						},
+						{
+							"key": "useBoxOfficeData",
+							"value": "false"
+						},
+						{
+							"key": "keywords",
+							"value": "space"
+						},
+						{
+							"key": "keywords",
+							"value": "alien"
+						},
+						{
+							"key": "genres",
+							"value": "action"
+						},
+						{
+							"key": "cityId",
+							"value": "5"
+						},
+						{
+							"key": "upcomingOnly",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Example case for advanced billboard request; scenario B.1"
+			},
+			"response": []
+		},
+		{
+			"name": "Billboard-B1-noresults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44345/cinema/billboard/buildadvanced?weekCount=2&bigScreenCount=2&smallScreenCount=1&useBoxOfficeData=false&keywords=inexisting keyword&keywords=another inexisting keyword&genres=comedy&cityId=5&upcomingOnly=false",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44345",
+					"path": [
+						"cinema",
+						"billboard",
+						"buildadvanced"
+					],
+					"query": [
+						{
+							"key": "weekCount",
+							"value": "2"
+						},
+						{
+							"key": "bigScreenCount",
+							"value": "2"
+						},
+						{
+							"key": "smallScreenCount",
+							"value": "1"
+						},
+						{
+							"key": "useBoxOfficeData",
+							"value": "false"
+						},
+						{
+							"key": "keywords",
+							"value": "inexisting keyword"
+						},
+						{
+							"key": "keywords",
+							"value": "another inexisting keyword"
+						},
+						{
+							"key": "genres",
+							"value": "comedy"
+						},
+						{
+							"key": "cityId",
+							"value": "5"
+						},
+						{
+							"key": "upcomingOnly",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Example case for advanced billboard request; scenario B.1, providing too stringent filter, which returns no results"
+			},
+			"response": []
+		},
+		{
+			"name": "Billboard-B2-example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44345/cinema/billboard/buildadvanced?weekCount=2&bigScreenCount=2&smallScreenCount=1&useBoxOfficeData=true&keywords=sequel&genres=comedy&cityId=5&upcomingOnly=false",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44345",
+					"path": [
+						"cinema",
+						"billboard",
+						"buildadvanced"
+					],
+					"query": [
+						{
+							"key": "weekCount",
+							"value": "2"
+						},
+						{
+							"key": "bigScreenCount",
+							"value": "2"
+						},
+						{
+							"key": "smallScreenCount",
+							"value": "1"
+						},
+						{
+							"key": "useBoxOfficeData",
+							"value": "true"
+						},
+						{
+							"key": "keywords",
+							"value": "sequel"
+						},
+						{
+							"key": "genres",
+							"value": "comedy"
+						},
+						{
+							"key": "cityId",
+							"value": "5"
+						},
+						{
+							"key": "upcomingOnly",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Example case for advanced billboard request; scenario B.2"
+			},
+			"response": []
+		},
+		{
+			"name": "Billboard-B-no parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44345/cinema/billboard/buildadvanced?",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44345",
+					"path": [
+						"cinema",
+						"billboard",
+						"buildadvanced"
+					],
+					"query": [
+						{
+							"key": "weekCount",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "bigScreenCount",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "smallScreenCount",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "keywords",
+							"value": "space",
+							"disabled": true
+						},
+						{
+							"key": "keywords",
+							"value": "lightsaber",
+							"disabled": true
+						},
+						{
+							"key": "genres",
+							"value": "science fiction",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "cityId",
+							"value": "9",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Example case for advanced billboard request; providing no parameters, resulting in validation error."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
